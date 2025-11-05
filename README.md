@@ -364,7 +364,7 @@ The average performance range across strategies is **4.57%** per class, indicati
 
 Our experiments demonstrate that point-supervised learning offers compelling practical advantages. With only **200 point annotations per image**, we achieve competitive segmentation performance while reducing annotation requirements by approximately **99.7%**. This has several important implications:
 
-**1. Cost-Benefit Analysis**
+**1. Analysis**
 
 Assuming an expert annotator requires:
 - Dense labeling: ~30-60 minutes per 1024×1024 image
