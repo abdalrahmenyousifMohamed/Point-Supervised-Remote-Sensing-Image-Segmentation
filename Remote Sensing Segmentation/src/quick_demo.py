@@ -16,7 +16,7 @@ def quick_demo():
     print("="*80 + "\n")
     
     base_config = {
-        'data_root': '/Users/pepo_abdo/Desktop/Remote Sensing Segmentation/data',
+        'data_root': 'Remote Sensing Segmentation/data',
         'scene': 'urban',  
         'image_size': 256,  
         'num_classes': 7,
