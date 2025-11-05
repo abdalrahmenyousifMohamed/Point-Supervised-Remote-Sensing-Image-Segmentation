@@ -10,6 +10,8 @@ __pycache__/
 .Python
 build/
 data/
+Remote Sensing Segmentation/data
+Remote Sensing Segmentation/src/checkpoints
 develop-eggs/
 dist/
 downloads/
