@@ -90,23 +90,8 @@ Our main contributions include:
 
 The core innovation enabling point-supervised learning is the **partial cross-entropy loss**, which modifies the standard cross-entropy loss to operate only on labeled pixels.
 
-#### 2.1.1 Mathematical Formulation
 
-Let $P \in \mathbb{R}^{B \times C \times H \times W}$ denote the model's predicted probability distributions, where $B$ is the batch size, $C$ is the number of classes, and $H \times W$ are the spatial dimensions. Let $Y \in \mathbb{R}^{B \times H \times W}$ denote the sparse ground truth labels, where most elements are set to a special $\texttt{ignore\_index}$ value (typically -1) indicating unlabeled pixels.
-
-The partial cross-entropy loss is defined as:
-
-$$
-\mathcal{L}_{\text{partial}} = -\frac{1}{|\Omega|} \sum_{b=1}^{B} \sum_{(i,j) \in \Omega_b} \log p_{y_{b,i,j}}^{b,i,j}
-$$
-
-where:
-- $\Omega_b = \{(i,j) | y_{b,i,j} \neq \texttt{ignore\_index}\}$ is the set of labeled pixels in batch element $b$
-- $|\Omega| = \sum_{b=1}^{B} |\Omega_b|$ is the total number of labeled pixels in the batch
-- $p_c^{b,i,j}$ is the predicted probability for class $c$ at spatial position $(i,j)$ in batch element $b$
-- $y_{b,i,j}$ is the ground truth class label at that position
-
-#### 2.1.2 Implementation Details
+####  Implementation Details
 
 Our implementation includes several important features:
 
@@ -304,7 +289,7 @@ The 2.5× increase in annotation cost yields only a -1.48% improvement in mIoU, 
 
 ### 4.3 Visualization
 
-![Experiment 1 Results](demo_results_summary.png)
+![Experiment 1 Results](https://raw.githubusercontent.com/abdalrahmenyousifMohamed/Point-Supervised-Remote-Sensing-Image-Segmentation/main/Remote%20Sensing%20Segmentation/src/experiments/demo_results_summary.png)
 
 *Figure 1: Performance analysis for varying numbers of point annotations. The left panel shows mIoU vs. number of points, demonstrating logarithmic improvement. Error bars (if present) represent standard deviation across training runs.*
 
@@ -368,7 +353,7 @@ The average performance range across strategies is **4.57%** per class, indicati
 
 ### 5.3 Visualization
 
-![Experiment 2 Results](demo_results_summary.png)
+![Experiment 1 Results](https://raw.githubusercontent.com/abdalrahmenyousifMohamed/Point-Supervised-Remote-Sensing-Image-Segmentation/main/Remote%20Sensing%20Segmentation/src/experiments/comprehensive_results.png)
 
 *Figure 2: Sampling strategy comparison (right panel). Bar heights indicate mIoU achieved by each strategy with 200 point annotations. All strategies use the same number of points, isolating the effect of sampling methodology.*
 
@@ -653,6 +638,4 @@ project/
 
 ---
 
-**End of Report**
 
-*Generated on November 05, 2025 at 15:45:48*
