@@ -2,7 +2,7 @@ from loveda_training import LoveDATrainer
 
 def run_training():
     config = {
-        'data_root': '/Users/pepo_abdo/Desktop/Remote Sensing Segmentation/data',
+        'data_root': 'Remote Sensing Segmentation/data',
         'scene': 'urban',
         'image_size': 256,
         'num_classes': 7,
