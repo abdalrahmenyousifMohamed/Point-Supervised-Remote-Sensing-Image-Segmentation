@@ -1,4 +1,3 @@
-# Technical Report
 
 ## Point-Supervised Semantic Segmentation of Remote Sensing Imagery
 
