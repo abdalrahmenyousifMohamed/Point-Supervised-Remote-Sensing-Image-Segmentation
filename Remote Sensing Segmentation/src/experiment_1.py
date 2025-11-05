@@ -2,7 +2,7 @@ num_points_list = [50, 100, 200, 500, 1000]
 from train_loveda import LoveDATrainer
 for num_points in num_points_list:
     config = {
-        'data_root': './Users/pepo_abdo/Desktop/Remote Sensing Segmentation/Train',
+        'data_root': '.Remote Sensing Segmentation/Train',
         'scene': 'both',
         'image_size': 512,
         'num_classes': 7,
